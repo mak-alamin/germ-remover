@@ -1,0 +1,54 @@
+*{
+  box-sizing: border-box;
+}
+.main-container{
+  display: flex;
+  align-items: baseline;
+  height: 100vh;
+}
+.door{
+  height: 100%;
+  width: 40%;
+  text-align: right;
+}
+.door img{
+  height: 100%;
+  transform: rotateY(130deg);
+}
+
+.table{
+  width: 60%;
+  background: url(images/table-short.jpg) no-repeat;
+  background-position: left center;
+  background-size: contain;
+  position: relative;
+}
+
+.table #bottle_2{
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  width: 130px;
+  top: -100px;
+  left: 30px;
+  transform: rotate(-45deg);
+  transition: 1s all;
+}
+#bottle_2 img{
+  width: 100%;
+  transform: rotate(45deg);
+}
+
+#bottle_2 img.spray {
+  max-height: 100px;
+  display: none;
+  position: absolute;
+  left: -44px;
+  top: -81px;
+  transform: rotate(75deg);
+}
+
+.table #bottle_2.spray{
+  transform: scale(1.5);
+  transform: rotate(-70deg);
+}
